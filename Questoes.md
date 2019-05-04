@@ -1,48 +1,46 @@
 ## Problema 1 
 >###### Quais são as duas características mais comuns para analisar algoritmos?
-As duas características mais comuns para analisar um software para dizer se é bom ou ruim são: Tempo e Consumo de memória.
+Tempo e consumo de memória, respectivamente Complexidade de Tempo e de espaço.
 
 ## Problema 2 
 >###### Por que a medida de tempo em segundos não representa qualificadamente o tempo de execuçãoo de um algoritmo?
-Não é medida em tempo o software já que deve possuir certa independência entre a tecnología; o software e o hardware.
+Medição em segundos não é uma medição estável e de qualidade para avaliação de softwares. As medidas devem ser independentes de tecnologia utilizada.
 
 ## Problema 3 
 >###### A medida de tempo de um algoritmo é realizada através de qual informação? O que pode afetá-la?
-A medição do tempo em representação a qualidade e estabilidade do software é feita mediante os passos do algoritmo que precisa para finalizar a sua execução.
-Pode afetá-la pelo ambiente do hardware em que ela é executada e o tamanho da entrada.
+É feita medição através da quantidade de passos que o algoritimo precisa para finalizar certa execução. O que pode interferir na medição são os componentes do ambiente de hardware (compilador, processador, sistema operacional, linguagem de programação, etc).
 
 ## Problema 4 
 >###### Na análise de algoritmos, qual é o valor da base da função logarítmica e exponencial? Por que é escolhido este valor?
-A base da função logarítmica e exponencial é 2.
-A base 2 tem uma importância muito considerada na informática dada a codificação binária que utiliza. O número determinado em um bit é de oito (8) exemplares que podem codificar-se com 2^8 = 256 que é o número de variações que pode realizar-se.
-O algoritmo binário tem uma frequência de aparição grande no análise de algoritmos.
+Exponencial na base 2. O logaritmo binário aparece freqüentemente na análise de algoritmos . Se um número n maior que 1 é dividido por 2 repetidamente, o número de iterações necessárias para obter um valor de pelo menos 1 é a parte inteira de lg n .
 
 ## Problema 5 
 >###### O que é complexidade de tempo?
-É uma função que representa o número máximo de passos de um algoritmo.
+É o resultado da função que mostra o número máximo de passos que é usado sobre uma entrada de certo comprimento. 
 
 ## Problema 6 
 >###### Dado dois algoritmos A e B com as complexidades de tempo respectivamente f1 e f2, qual é o melhor algoritmo? O que indica qual é o melhor algoritmo?
-Considerando A e B dois algoritmos totalmentes diferentes, é selecionado o melhor aquele que é executado com menores números de passos à finalização da execução e aquele que tem uma menor complexidade de tempo.
+O algoritimo com a menor complexidade de tempo é o melhor. O melhor algoritimo tem uma menor taxa de crescimento.
 
 ## Problema 7 
 >###### Em uma função de complexidade, o que representa o termo n?
-Em uma função de complexidade o termo “n” é considerado como o comprimento da entrada.
+n representa o comprimento da entrada utilizada para o cálculo.
 
 ## Problema 8 
 >###### Quais são as operações primitivas de um algoritmo?
 As operações primitivas de um algoritmo são:
-- Atribuição de valores a variáveis;
-- Chamadas de métodos;
-- Operações aritméticas;
-- Comparação de dois números;
-- Acesso a um arranjo;
-- Seguimento de uma referência para um objeto;
-- Retorno de um método.
+- Atribuição de valores a variáveis
+- Chamadas de métodos
+- Operações aritméticas (por exemplo, adição de dois números)
+- Comparação de dois números
+- Acesso a um arranjo
+- Seguimento de uma referência para um objeto
+- Retorno de um método
+
 
 ## Problema 9 
 >###### Qual é o valor de uma operação primitiva de um algoritmo?
-Para cada valor de uma operação primitiva de um algoritmo é atribuído o valor 1.
+Para cada operação primitive se atribui o valor 1
 
 ## Problema 10 
 >###### Desenvolva o pseudocódigo do algoritmo SOMA, que realiza a soma de dois números inteiros recebidos por parâmetro e tem como saída a resultado da operação. Identifique a sua função de complexidade de tempo.
@@ -133,53 +131,45 @@ f(n) = 4n² + 2n + 2
 
 ## Problema 15
 >###### O que é análise assintótica? Qual é o seu objetivo?
-A análise assintótica é um método de descrever o comportamento de limites, com objetivo de compreender o tempo de execução para entradas grandes.
+Análise assintótica é um método de descrever o comportamento de limites. É uma forma de julgarmos se o nosso algoritmo é eficiente, baseando-se sempre no pior caso.
 
 ## Problema 16 
 >###### Qual é o processo da análise assintótica? Crie um exemplo
 
-1 - f(n) = 6n³ + 2n² + 20n + 45;
-<br />
-2 - Identificar o componente de maior ordem;
-<br />
-3 - 6n³;
-<br />
-4 - Ignorar os coeficientes;
-<br />
-5 - n³;
-<br />
-Dizemos que f é assintoticamente no, máximo, n³.
+- Identificar o componente de maior ordem e ignorar coeficientes
+Ex:    f(n) = 7n4 + 2n3 + n2 + 3n 
+Maior componente -> 7n4
+Sem o coeficiente -> n4
 
 ## Problema 17 
 >###### O que é a notação assintótica?
-É uma notação utilizada para descrever o relacionamento é f(n) = O(n³).
+É a classificação para a taxa de crescimento do tempo de execução.
 
 ## Problema 18 
 >###### O que é a notação O-Grande ou Big-Oh?
-Notação O-Grande diz que uma função é menor que ou igual a outra função g(n). Ou seja, f é limitada superiormente por g assintoticamente. Geralmente é usada para mostrar como os programas precisam de recursos em relação ao tamanho de entrada.
+Usamos a notação big-Θ para delimitar asintóticamente o crescimento do tempo de execução dentro dos fatores constantes superiores, ou seja, os piores casos.
 
 ## Problema 19 
 >###### Qual é a definição formal da notação O-Grande?
-Formalmente definimos como: Onde R+ é o conjunto dos reais não negativos.
+Formalmente definimos como: Onde R+ é o conjunto dos reais não negativos.Onde R+ é o conjunto dos reais não negativos. Sejam f e g funções f,g: N → R+. Digamos que f(n) = O(g(n)) se existem inteiros positivos c e n0 tais que para todo
+inteiro n ≥ n0
+f(n) ≤ cg(n).
+
 
 ## Problema 20 
 >###### Crie um gráfico explicando a notação O-grande. Utilize f(n) = 2n + 4. Qual é um valor possível para n0?
-![questao20](https://raw.githubusercontent.com/gherickds/AnaliseAlgoritmosESTD/master/big-oh.PNG)
-<br />
-Possível valor para n0:
-<br />
-n0 = 4
+
 ## Problema 21 
 >###### O que é a notação o-pequeno ou Little-Oh?
-É uma notação a qual diz que uma função é menor que a outra g(n). Ou seja, f é dominada por g assintoticamente.
+- Notação O –pequeno diz que uma função é menor que a outra função g(n). Ou seja, f é dominada por g assintoticamente. A diferença entre Big-Oh e Little-Oh é análoga aquela entre ≤ e <.
 
 ## Problema 22 
 >###### Qual é a definição formal da notação o-pequeno?
-Formalmente definimos como: Onde R+ é o conjunto dos reais não negativos.
+Onde R+ é o conjunto dos reais não negativos.
 
 ## Problema 23 
 >###### Crie um gráfico explicando a notação o-pequeno.
-![questao23](https://raw.githubusercontent.com/gherickds/AnaliseAlgoritmosESTD/master/little-oh.PNG)
+
 ## Problema 24 
 >###### Passe a notação O-grande e o-pequeno as funções abaixo:
 **A) F(n) = n + 1**
